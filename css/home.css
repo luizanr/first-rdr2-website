@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Rye&family=Share+Tech&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Rye&family=Share+Tech&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Rye&family=Share+Tech&display=swap');
+
+/*VARIAVEIS DE CORES */
+:root{
+    --color-neutral-0:  #0c0b0b;
+    --color-neutral-10: #000000;
+    --color-neutral-30: #a8a29e;
+    --color-neutral-40: #f5f5f5;
+}
+
+
+/*                   HOME PAGE                   */
+*{
+    margin: 0; padding: 0;
+    box-sizing:content-box;
+}
+body{
+    background-color: #000000;
+}
+/*HEADER-----------------------------------------*/
+header{
+    transform: translateY(-100px);
+    text-align: center;
+    height: 230px;
+    
+    background-image: url('imagens/rdr-banner05.jpg');
+    background-size: cover; /* Garante que a imagem cubra toda a área */
+    background-position: center; /* Centraliza a imagem de fundo */
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../imagens/rdr-banner05.jpg');
+    background-size: cover;
+    background-repeat:repeat-y;
+    background-position: center center;
+    z-index: -1;
+}
+
+/*NAV--------------------------------------------*/
+.menu{
+    background-color: black;
+    font-family: 'Rye', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    padding: 25px;
+    text-align: center;
+}
+.banner{
+    width: 130%; /* A largura da imagem será 100% da largura do contêiner pai */
+    max-width: 100%; /* Limita a largura máxima da imagem */
+    height: auto; /* A altura será ajustada proporcionalmente */
+    justify-content: center;
+    display: block;
+    margin: auto;
+}
+
+
+
+/*Links dentro do nav*/
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-size: x-large;
+    padding: 25px 50px;
+    position: relative;
+    border-radius:7px;
+}
+
+
+.menu a:hover{
+    background-color: white;
+    transition: .3s ease-out; 
+    color: black;
+    font-weight: bolder;
+}
+
+/*MAIN-------------------------------------------*/
+.home-page{
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    
+
+    width: 130%; /* A largura da imagem será 100% da largura do contêiner pai */
+    max-width: 100%; /* Limita a largura máxima da imagem */
+    height: auto; /* A altura será ajustada proporcionalmente */
+    
+}
+.introducao{
+    color: #ffffff;
+    text-indent: 70px;
+    text-align: justify;
+    font-family: 'Lato', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    max-width: 1000px; 
+    width: 100%; 
+    margin: 0 auto; 
+    padding: 100px 1px 1px 1px;
+    font-size: large;
+}
+.container{
+    position: relative;
+    min-height: 100vh;
+    padding: 80px 0px;
+}
+
+/* Div imagens */
+.container .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 20px 10rem 0 ;
+}
+
+.container .image-container .image {
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 75px; /* Espaço abaixo de cada imagem */
+    flex: 1 1 calc(50% - 30px); /* Ocupa 50% da largura menos o gap */
+}
+
+.container .image-container .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; /* Adiciona transição para transform e filter */
+}
+
+.container .image-container .image:hover img{
+    transform: scale(1.03);
+    filter: brightness(1.5); /* Altera a tonalidade da imagem */
+    box-shadow: 0 0 15px rgba(212, 24, 24, 0.329); /* Sombra com deslocamento X, deslocamento Y, desfoque e cor */
+}
+
+.container .image-container a{
+    text-decoration: none;
+}
+
+.container .image-container .image p {
+    color: white;
+    font-family: 'Rye', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+    margin-top: 15px; /* Espaço abaixo da imagem */
+    transition: color 0.3s ease-in-out;
+}
+
+.container .image-container .image:hover p {
+    color: #ff0000;
+ 
+}
+

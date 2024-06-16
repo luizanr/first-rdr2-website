@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Rye&family=Share+Tech&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Rye&family=Share+Tech&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Rye&family=Share+Tech&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/*VARIAVEIS DE CORES */
+:root{
+    --color-neutral-0:  #0c0b0b;
+    --color-neutral-10: #000000;
+    --color-neutral-30: #a8a29e;
+    --color-neutral-40: #f5f5f5;
+}
+
+
+/*                   HOME PAGE                   */
+*{
+    margin: 0; padding: 0;
+    box-sizing:content-box;
+}
+
+/*HEADER-----------------------------------------*/
+header{
+    transform: translateY(-100px);
+    text-align: center;
+    height: 230px;
+}
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../imagens/rdr-banner05.jpg');
+    background-size: cover;
+    background-repeat:repeat-y;
+    background-position: center center;
+    z-index: -1;
+}
+/*NAV--------------------------------------------*/
+.menu{
+    background-color: black;
+    font-family: 'Rye', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    padding: 25px;
+    text-align: center;
+}
+.banner{
+    width: 130%; /* A largura da imagem será 100% da largura do contêiner pai */
+    max-width: 100%; /* Limita a largura máxima da imagem */
+    height: auto; /* A altura será ajustada proporcionalmente */
+    justify-content: center;
+    display: block;
+    margin: auto;
+}
+/*Links dentro do nav*/
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-size: x-large;
+    padding: 25px 50px;
+    position: relative;
+    border-radius:7px;
+}
+.menu a:hover{
+    background-color: white;
+    transition: .3s ease-out; 
+    color: black;
+    font-weight: bolder;
+}
+/*MAIN-------------------------------------------*/
+.home-page{
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    
+
+    width: 130%; /* A largura da imagem será 100% da largura do contêiner pai */
+    max-width: 100%; /* Limita a largura máxima da imagem */
+    height: auto; /* A altura será ajustada proporcionalmente */
+}
+
+
+/*-----------------------------------------------*/
+/*-----------------------------------------------*/
+/*-----------------------------------------------*/
+/*-----------------------------------------------*/
+/*-----------------------------------------------*/
+
+#main{ 
+    border-radius: 10px;
+}
+#character-content{
+    color: white;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.character-image{
+    display: flex;
+    justify-content: center;
+}
+.small-image{
+    padding: 20px;
+    max-width: 100%;
+    width: 75%;
+    height: auto; 
+    object-fit: contain; 
+    border-radius: 30px;
+}
+
+.character-description p{
+    font-size: 20px;
+    line-height: 1.2;
+    padding: 50px 0 70px;
+
+    max-width: 100%;
+    width: 60%;
+    height: auto;
+
+    text-indent: 70px;
+    text-align: justify;
+    font-size: large;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+/*---------------------------------*/
+/*indice*/
+.title{
+    font-family: 'Oswald';
+    font-size: 60px;
+    background-color: #b9060c;
+    border-radius: 10px 10px 0 0 ;
+
+    max-width: 100%;
+    width: 70%;
+    height: auto;
+
+    margin: auto;
+    display: block;
+    justify-content: center;
+    text-align: center;
+
+}
+#box{
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.062);
+    
+    max-width: 100%;
+    width: 70%;
+    height: auto;
+    
+    margin: auto;
+    justify-content: center;
+    font-size: 13px;
+
+    padding: 40px 0;
+    margin-bottom: 20px;
+}
+.topico{
+    color: #B9060C;
+    font-size: 17px;
+    text-decoration: none;
+}
+.anchor-link{
+    display: block;
+    font-family: 'lato';
+    font-size: 15px;
+    padding: 5px 0;
+    text-decoration: none;
+    color: var(--color-neutral-30);
+}
+ul{
+    list-style-type: none;
+}
+li{
+    margin: 5px 0;
+}
+#history, #appearance, #personality, #skills, #importance, #interesting{
+    margin-left: 10px;
+    margin-bottom: 1.5rem;
+}
+
+
+/*---------------------------------*/
+/*corpo*/
+
+
+
+.title-topic{
+    font-family: 'Oswald';
+    font-size: 25px;
+    width: 70%;
+    background-color: #b9060c;
+    border-radius: 10px 10px 0 0 ;
+
+    padding: 7px;
+    text-align: center;
+    margin: auto;
+}
+
+#wiki-content{
+    border-radius: 5px 10px;
+    display: grid;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.062);
+    
+    max-width: 100%;
+    width: 70%;
+    height: auto;
+    
+    margin: auto;
+    justify-items: center;
+    justify-content: center;
+    font-size: 13px;
+
+}
+
+.box-topic{
+    background-color: white;
+    color: rgb(15, 14, 14);
+    border-radius: 0 0 10px 10px;
+    display: grid;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.062);
+    
+    max-width: 100%;
+    width: 70%;
+    height: auto;
+    
+    margin: auto;
+    justify-content: center;
+    font-size: 13px;
+
+    padding: 40px 30px;
+    margin-bottom: 20px;
+
+}
+.box-topic p{
+    font-family: 'poppins';
+    font-weight: 500;
+    font-size: 15px;
+
+    max-width: 100%;
+    width: 95%;
+    height: auto;
+    
+    text-indent: 50px;
+    text-align: justify;
+    margin: auto;
+    display: flex;
+
+}
+.box-topic li{
+    font-family: 'poppins';
+    font-weight: 500;
+    font-size: 15px;
+
+    max-width: 100%;
+    width: 95%;
+    height: auto;
+    
+    text-indent: 50px;
+    text-align: justify;
+    margin: auto;
+    display: flex;
+
+    padding-bottom: 13px;
+}
+
+.sub-topic{
+    max-width: 100%;
+    width: 36%;
+    height: auto;
+    justify-content: center;
+    
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background-color: #b9060c;
+    border-radius: 6px 6px 0 0;    
+}
+.sub-topic h3{
+    color: white;
+    display: inline-block;
+    font-weight: bolder;
+    margin: left;
+
+    padding: 5px 1rem;
+    font-size: 15px;
+    font-family: 'lato';
+}
+.destaque{
+    color: #B9060C;
+    font-weight: 700;
+    font-size: 15px;
+    max-width: 100%;
+    width: 95%;
+    height: auto;
+    
+    text-indent: 50px;
+    text-align: justify;
+    margin: auto;
+    display: flex;
+}
+
+#end{
+    font-family: 'Oswald';
+    font-size: 20px;
+    padding: 15px;
+    background-color: #b9060c;
+    border-radius: 10px;
+
+    max-width: 100%;    
+    width: 70%;
+    height: auto;
+
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+#end a{
+    color: white;
+    text-decoration: none;
+
+    transition: .2s ease-in-out;
+}
+#end a:hover{
+    color:#4b0002;
+}

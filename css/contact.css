@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Rye&family=Share+Tech&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Rye&family=Share+Tech&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Rye&family=Share+Tech&display=swap');
+
+/*VARIAVEIS DE CORES */
+:root{
+    --color-neutral-0:  #0c0b0b;
+    --color-neutral-10: #000000;
+    --color-neutral-30: #a8a29e;
+    --color-neutral-40: #f5f5f5;
+}
+
+
+/*                   HOME PAGE                   */
+*{
+    margin: 0; padding: 0;
+    box-sizing:content-box;
+}
+body{
+    background-color: #000000;
+}
+/*HEADER-----------------------------------------*/
+header{
+    transform: translateY(-100px);
+    text-align: center;
+    height: 230px;
+}
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../imagens/rdr-banner05.jpg');
+    background-size: cover;
+    background-repeat:repeat-y;
+    background-position: center center;
+    z-index: -1;
+}
+/*NAV--------------------------------------------*/
+.menu{
+    background-color: black;
+    font-family: 'Rye', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    padding: 25px;
+    text-align: center;
+}
+.banner{
+    width: 130%; /* A largura da imagem será 100% da largura do contêiner pai */
+    max-width: 100%; /* Limita a largura máxima da imagem */
+    height: auto; /* A altura será ajustada proporcionalmente */
+    justify-content: center;
+    display: block;
+    margin: auto;
+}
+/*Links dentro do nav*/
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-size: x-large;
+    padding: 25px 50px;
+    position: relative;
+    border-radius:7px;
+}
+.menu a:hover{
+    background-color: white;
+    transition: .3s ease-out; 
+    color: black;
+    font-weight: bolder;
+}
+/*MAIN-------------------------------------------*/
+.home-page{
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    
+
+    width: 130%; /* A largura da imagem será 100% da largura do contêiner pai */
+    max-width: 100%; /* Limita a largura máxima da imagem */
+    height: auto; /* A altura será ajustada proporcionalmente */
+}
+
+/*------------------------------------------------------------------------------------------------------------*/
+#divisoria{
+    padding: 45px;
+}
+#centered-content{
+    border-radius: 10px;
+    z-index: +1;
+    transform: translateY(-10px);
+}
+.box-contact{
+    background-color: white;
+    display: grid;
+
+    font-size: 13px;
+    color: #0c0b0b;
+    border-radius: 5px 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.11);
+
+    max-width: 100%;
+    width: 65%;
+    height: auto;
+
+    margin: auto;
+    justify-content: center;
+
+    padding: 50px;
+}
+.title{
+    color: black;
+    font-family: 'Lato' ,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    word-spacing: 2px;
+    margin-bottom: 20px;
+}
+.box-contact p{
+    color: #535353;
+    font-family: 'Lato' ,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    word-spacing: 2px;
+    margin-bottom: 20px;
+}
+/*---------------------------------------------------------------------------------------*/
+
+.box-contact section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 45px;
+    background-color: var(--color-neutral-0);
+}
+.box-contact section h2{
+    color: white;
+    font-size: 2.5rem;
+    margin: 1.5rem;
+}
+.box-contact section form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.box-contact form label{
+    color: white;
+    font-size: 17px;
+    margin: 4px;
+}
+.box-contact form input{
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all .5s;
+}
+.box-contact form input:focus{
+    border-radius: 16px;
+}
+.box-contact form textarea{
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all .5s;
+}
+.box-contact form textarea:focus{
+    border-radius: 16px;
+}
+.box-contact form button{
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    transition: all 1s;
+    margin-bottom: 20px;
+}
+.box-contact form button:hover{
+    background-color: white;
+    color: #0c0b0b;
+    border-radius: 16px;
+}
+
+/*---------------------------------------------------------------------------------------*/
+/*pagina de obrigado*/
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100ph;
+    background-color: var(--color-neutral-0);
+    flex-direction: column;
+}
+.text{
+    font-size: 45px;
+    color: white;
+    margin-bottom: 30px;
+    padding-top: 250px;
+}
+.paragrafo{
+    color: white;
+    padding: 0 17rem 0 17rem;
+    margin-bottom: 30px;
+}
+.btn{
+    padding: 15px 55px;
+    background-color: white;
+    text-decoration: none;
+    color: #0c0b0b;
+    font-size: 18px;
+    transition: all .5s;
+    margin-bottom: 250px;
+
+}
+.btn:hover{
+    border-radius: 16px;
+    
+}
